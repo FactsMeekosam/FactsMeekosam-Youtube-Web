@@ -1,19 +1,24 @@
 /* 🌐 General Body Styling */
+/* Remove any global background */
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  color: #ffffff;
-  background-color: #000;
+  background-color: #111; /* fallback background */
+  color: white;
 }
 
-/* 🦸‍♂️ Hero Section */
+/* ✅ Hero section with custom background image */
 .hero {
-  background-image: url('bg.png'); /* 🔍 Make sure bg.png is in the same folder */
+  background-image: url('bg.png');
   background-size: cover;
   background-position: center;
-  padding: 100px 20px;
+  padding: 120px 20px 60px 20px;
   text-align: center;
+  color: white;
+  position: relative;
+  z-index: 1;
 }
+
 
 .hero h1 {
   font-size: 3em;
