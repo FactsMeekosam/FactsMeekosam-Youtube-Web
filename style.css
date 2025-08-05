@@ -117,3 +117,27 @@ footer {
   padding: 15px 0;
   font-size: 0.9em;
 }
+
+/* 🔴 YouTube Subscribe Button */
+.subscribe-btn-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.subscribe-btn {
+  background: #ff0000;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+  box-shadow: 0 4px 10px rgba(255, 0, 0, 0.3);
+}
+
+.subscribe-btn:hover {
+  background: #cc0000;
+  transform: scale(1.05);
+}
