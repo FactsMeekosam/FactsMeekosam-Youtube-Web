@@ -1,19 +1,18 @@
-/* Base styles */
+/* 🌐 General Body Styling */
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #0f0f0f;
-  color: #f1f1f1;
+  color: #ffffff;
+  background-color: #000;
 }
 
-/* Hero Section */
+/* 🦸‍♂️ Hero Section */
 .hero {
-  background-image: url('bg.png');
+  background-image: url('bg.png'); /* 🔍 Make sure bg.png is in the same folder */
   background-size: cover;
   background-position: center;
   padding: 100px 20px;
   text-align: center;
-  color: white;
 }
 
 .hero h1 {
@@ -24,61 +23,54 @@ body {
 
 .hero p {
   font-size: 1.2em;
-  color: #e63946;
+  color: #ffffff;
 }
 
-/* Navigation */
+/* 📌 Sticky Navbar */
 nav {
-  text-align: center;
   background: #111;
   padding: 10px 0;
+  text-align: center;
   position: sticky;
   top: 0;
   z-index: 100;
 }
 
 nav a {
-  color: #f1f1f1;
+  color: #ffd700;
   text-decoration: none;
-  margin: 0 15px;
+  margin: 0 20px;
   font-weight: bold;
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
-  color: #ffd700;
+  color: #fff;
 }
 
-/* Section Titles */
-h2 {
+/* 📺 Video Section */
+.videos-section {
+  background: #111;
+  padding: 40px 20px;
+}
+
+.videos-section h2 {
   color: #ffd700;
   text-align: center;
-}
-
-/* About Section */
-#about {
-  background: linear-gradient(to bottom, #121212, #1c1c1c);
-  padding: 50px 20px;
-  max-width: 1000px;
-  margin: auto;
-}
-
-/* Video Section */
-.videos-section {
-  background: linear-gradient(to bottom right, #1a1a1a, #121212);
-  padding: 50px 20px;
+  margin-bottom: 30px;
 }
 
 .video-grid {
   display: flex;
-  gap: 20px;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 30px;
 }
 
 .video-card {
-  flex: 1 1 300px;
-  background: #1c1c1c;
-  padding: 15px;
+  width: 320px;
+  background: #222;
+  padding: 10px;
   border-radius: 10px;
   box-shadow: 0 0 10px #000;
 }
@@ -91,31 +83,37 @@ h2 {
 }
 
 .video-card p {
-  text-align: center;
   margin-top: 10px;
+  color: #ccc;
+  font-size: 0.95em;
 }
 
-/* Contact Section */
+/* 📬 Contact Section */
 .contact-section {
-  background: linear-gradient(to right, #000428, #004e92);
-  padding: 50px 20px;
+  background: #000;
+  padding: 40px 20px;
   text-align: center;
+}
+
+.contact-section h2 {
+  color: #ffd700;
+  margin-bottom: 15px;
 }
 
 .contact-section a {
-  color: #ffd700;
-  text-decoration: underline;
+  color: #00f0ff;
+  text-decoration: none;
 }
 
 .contact-section a:hover {
-  color: #fff;
+  text-decoration: underline;
 }
 
-/* Footer */
+/* 👣 Footer */
 footer {
+  background: #111;
+  color: #777;
   text-align: center;
-  padding: 20px;
-  background: #000;
-  color: #888;
+  padding: 15px 0;
   font-size: 0.9em;
 }
