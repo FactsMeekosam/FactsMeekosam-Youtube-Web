@@ -86,3 +86,12 @@ footer {
   color: #888;
   font-size: 0.9em;
 }
+.hero {
+  background-image: url('bg.png');
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  text-align: center;
+  color: white;
+}
+
